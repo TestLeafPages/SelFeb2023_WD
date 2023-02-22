@@ -1,0 +1,79 @@
+Todays Agenda!!
+================
+   9:30-10:30-Java and Automation Introduction
+   10:30-11:00-Project,package,Class
+   11:00-11:30-Breakout
+   11:30-12:15-methods,Object
+   12:15-12:30-Breakout
+   12:30-12:40-Recap
+
+ Class: A testcase java file where you write a logic
+ 
+ * A class is a user defined blue print or templates
+ 
+ what can be inside a class? 
+ constructor,method,variable,object.
+ 
+ class name started with uppercase
+ 
+ its PASCAL CASE
+ 
+ ex: SoftwareTest
+ TestLeaf
+
+
+
+
+
+
+what is method?
+ 
+ Method is a smaller line of code that does some specific operations/action
+ 
+ name convention is starting with lowercase following word should be in uppercase
+ it is CAMEL CASE .
+ 
+ ex: maxMark()
+ firstCode()
+ 
+ Method syntax:
+ 
+ Accessmodifier Returntype  name()
+ 
+ public void maxMark(){
+ 
+ }
+ public ---Access modifier ---Specifics who can access
+ void   ---Return type---output of method
+ maxMark ---name--name of the method
+ ()-input arguments----0,1,2,....n
+
+
+
+
+
+
+
+What is object?
+       its an instance classname
+ 
+ 1. create an object for classname
+ 2. call the method using the object
+ 
+ syntax: classname objectname= new classname();
+ 
+ new--> is keyword 
+ 
+ classname()-- constructor
+ 
+ objectname.method1();
+ ====================================================
+ 
+ variable-Name convention starting lowercase following uppercase
+ int maxMark=45;
+ //it can access in method alone
+ local variable
+
+
+ //global variable
+	int d=5;
