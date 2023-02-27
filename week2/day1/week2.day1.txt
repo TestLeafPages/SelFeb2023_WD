@@ -1,0 +1,49 @@
+Agenda for Today
+================
+9.30 to 10.30--Array
+10.30 to 11.00--Breakout + Break
+11.00 to 12.10--String
+12.10 to 12.30--Breakout
+12.30 to 12.40--recap
+
+
+Array:
+
+what is array?
+
+An array is collection of similar datatypes
+Array index start from '0'
+static data types 
+its fixed data 
+if you not given values to arrya .its aste and e cannot reuse
+
+
+
+
+
+String:
+String is class
+collection of characters
+
+String is immutable--- we cannot changeable
+
+
+to types e can create string
+1.STRING LITERAL
+2.STRING OBJECT
+
+STRING LITERAL
+String company ="TestLeaf";
+
+STRING OBJECT:
+String company=ne String("TestLeaf");
+
+Methods:
+length()--to find 	ho many characters --int
+toCharArray()-- covert string to character array--char[]
+equals("")-- to compare String content--boolean
+equalIgnoreCase()--it ill not compare loercase or uppercase
+contins()--  compare the string ith matching content-- boolean
+indexOf()-- ill return the index  position of the given character---int
+CharAt()--character available in the given  position---character
+
