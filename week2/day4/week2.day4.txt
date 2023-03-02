@@ -1,0 +1,143 @@
+Todays Agenda:
+==============
+9.30 to 10.45--Advance XPATH
+10.45to 11.30--Classroom + Break
+11.30 to 12.30--Method Signature
+
+
+1.parent -child
+2.grandparent to grandchild
+3.sibiling
+4.cousins
+
+in Advancexapth we have 8 xpaths
+
+1.parent - child----1st
+syntax:
+basic xpath for parent/tagname of child
+//form[@id='login']/p
+
+2.child to parent--3rd
+basic xpath for child/parent::parent tag name
+//input[@id='password']/parent::p
+
+3.grandparent to grandchild----2nd
+basic xpath for grandparent//tagname of grandchild
+(//div[@id='form']//p)[4]
+//form[@id='login']//label
+
+4.grandchild to grandparent--4th
+basic xpath for gc/ancestor::tagname of grandparent
+
+//input[@class='decorativeSubmit']/ancestor::form
+
+5.elder sibling to younger sibling-5th
+basic xpath for elder sibling/following-sibling::tagname of younger sibling
+//label[text()='Password']/following-sibling::input
+
+6.younger sibling to elder sibling--6th
+basic xpath for ys/preceding-sibling::tagname es
+//input[@id='username']/preceding-sibling::label
+
+7.ec to yc
+basic xpath for ec/following::tagname yc
+//label[text()='Username']/following::input[@id='password']
+
+8.yc to ec
+
+//input[@id='password']/preceding::label
+
+
+
+
+
+
+
+
+Classroom 1:
+  Login to salesforce application(https://login.salesforce.com/)
+  credentials:
+  username:hari.radhakrishnan@qeagle.com
+  passsword:Leaf@123
+  Enter username
+  Enter password
+  click Login
+  click on toggle button
+  Click view All 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Method Signature:
+     =================
+       1)Access modifier
+       2)return type
+       3)Method name
+       4)Input arguments
+
+public void name(){
+
+}
+
+public int add(int a,int b){
+  return a+b;
+}
+
+
+
+      1)Access modifier:
+      ==================
+        There are 4 types of access modifier
+
+         public
+          - Anyone can access
+          - It can be accessed by any of the classes within the package and outside the package
+          - To access the public methods from another package - import 
+
+         private
+           - Only you can access
+           - It can be accessed only within the same class
+
+         protected
+
+
+
+         default  
+            -It can be accessed by any of the classes within the same package
+            -It cannot be accessed by any of the classes outside the package
+             
+
+   2.Return type
+
+    * primitive data type
+    *Non primitive data type    
+
+
+    void-- no return type     
+
+  3.Method Name
+  Method name should be meaningful 
+  it start with lowercase
+
+  4.Input  arguments
+  we can have zero inputargumets
+  with 1,2,3.....N
+
+  we can have both primitive and non primitive 
+  mix of both
