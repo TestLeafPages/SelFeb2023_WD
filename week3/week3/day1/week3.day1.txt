@@ -1,0 +1,76 @@
+
+
+Todays Agenda:
+==============
+9.45 to 10.45--Java OOPs Intro,Inheritance
+10.55to 11.35--Classroom + Break
+11.35 to 12.20--Polymorphism
+12.20 to 12.35--Classroom
+12.35 to 12.45--Recap
+
+
+
+
+OOPs concept
+=============
+
+--Inheritance
+--Polymorphism
+--Abstraction
+--Encapsulation
+
+keyword: extends
+gf - f ---single level or simple inheritance
+
+gf- f-son -----mutilevel inheritance
+
+
+
+
+
+
+
+Polymorphism in Java:
+=====================
+
+Polymorphism in Java is a concept by which we can perform a single action in different ways. 
+The word “poly” means many, and “morphs” means forms. So, Polymorphism means many forms.
+
+poly- many
+morphs- forms
+
+
+Types of Polymorphism in Java
+----------------------------
+Method overloading:
+===================
+Static polymorphism / Compile-time polymorphism/early binding/Static Binding
+
+** when 2 or more method inside the same class
+method name will be same but different input arguments
+** Have same signature expect the input argument
+
+eg:
+class{
+ public void add(int a,int b)
+syso
+
+public void add(int a,int b,int c)
+syso(a+b+c)
+}
+========================
+public void add(int a,int b)----->we cannot  able use it 
+========================
+
+
+
+Method overriding:
+=================
+Dynamic polymorphism / Runtime polymorphism/ late binding/dynamic binding
+
+** when 2 or more same method are within different classes
+but inherited  between them
+and the signature same
+but the logic is different
+
+Ex: inheritance -->with same method name in 
