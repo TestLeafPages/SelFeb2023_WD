@@ -1,0 +1,64 @@
+Agenda for Today:
+  
+   9.45 to 10.45 ---WebTable
+   10.45 to 11.15---Classroom 
+   11.15 to 12.15---ActionClass
+   12.15 to 12.45---Classroom
+   
+
+WebTable:
+=========
+
+types of WebTable:
+
+static table-->number rows and columns remain same always
+dynamic table--> number rows and columns change based on the inputs.
+
+webtable structure:
+<table>
+
+      <thead>-- table header--> tohave the column vlaues
+
+        <tbody>-- table body--> to have the data
+
+                 <tr> --- table row -->vlaues
+
+                         <td>-table data
+
+
+  </thead>
+
+
+</table>
+
+classroom:1
+Steps:
+1. Navigate to https://erail.in/
+2. Clear the text in source and enter "ms" and tab or enter(kteys.enter or tab )
+3. Clear the text in destination and enter "co" and tab or enter
+4. Uncheck sort on date
+5. Store all the train names in a list		
+6.print train names
+
+
+
+6. Get the size of list		
+7. Add the list into a new Set		
+8. Get the size of set
+9. Get all  the train names and verify whether any duplicate train name is there or not
+
+tips:
+Table Class Name : DataTable TrainList TrainListHeader stickyTrainListHeader
+
+
+
+ActionClass:
+
+Adavance user interaction
+
+
+1. moveToElement--> mouseover
+2.scrollToElement
+3. dragandrop
+4. draganddropby
+5.Right click--> context click
