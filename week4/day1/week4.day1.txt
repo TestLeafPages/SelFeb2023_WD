@@ -1,0 +1,108 @@
+Agenda for Today:
+=================
+  
+   9.45 to 10.35 ---Frame
+   10.35 to 11.15---Classroom 
+   11.15 to 12.15---Alert
+   12.15 to 12.35---Classroom
+   12.35 to 12.45---Recap
+   
+
+
+
+   Frame:
+
+-HTML element that helps developers to organize the set of elements
+
+-iframe (tag) that means it is in-line frame(frame/ frameset)
+
+Iframe- identified in two ways
+---by right click on webpage-->frame source
+---by searching  //frame in DOM
+
+
+
+syntax:
+driver.switchto().frame();
+
+NoSuchElement:
+
+-Either your locator is worng
+- or the element may be living inside the frame.
+
+
+Three types or Methods
+======================
+  - index[0]
+	- id or name(values)
+	- WebElement(xpath)
+
+exceptions:
+	
+NoSuchFrameException
+
+NoSuchElementException
+
+======================
+driver.switchto().parentframe
+driver.switchto().defaultcontent
+
+
+Classroom 1:
+
+  https://jqueryui.com/droppable/ 
+  https://jqueryui.com/draggable/
+
+
+
+
+
+Alert:(Selenium webdriver)
+
+----Modal Dailog
+----Not inspectable (it is java script not a html code)
+
+Modal Dailog
+Types:
+1.Simple Alert(only one option)(ok)
+2.Confirm Alert(2 options)(yes/no or ok/cancle)
+3.Prompt Alert(text box+ 2 options)
+
+Methods in Alert:
+1.Accpet(positive action)----OK
+2.Dismiss(negative action)----CANCLE
+3.Sendkeys(types values in it)-----always clear before type 
+4.GetText
+
+
+
+
+
+Characteristics:
+	1. Cannot inspect an alert
+	2. Cannot interact with the main window unless the alert is handled
+
+
+Limitation:
+-- you cannot take snapshot of the alert
+
+Exception:
+-- if you try interacting with DOM element without closing alert: UnhandledAlertException
+-- if you areinteracting with analert through code butalert did not appear: NoAlertPresentException
+
+
+non-modalD Dailog
+
+Sweet Alert:
+--can able inspect
+
+
+Classroom 2:
+1. Navigate to https://www.w3schools.com/js/tryit.asp?filename=tryjs_prompt
+2.Handle Frame
+3. Click on Try it button
+4. Enter your name in alert box
+5. accept the alert
+6. Verify your name under Try it button
+
+
