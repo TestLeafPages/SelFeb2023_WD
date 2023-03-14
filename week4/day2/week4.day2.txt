@@ -1,0 +1,81 @@
+Agenda for Today:
+=================
+  
+   9.35to 10.35 ---windowHandling,Shadow Dom
+   10.35 to 11.15---Classroom 
+   11.15 to 12.15---Explicit wait,javaScript,Snapshot,
+   12.15 to 12.35---Classroom
+   12.35 to 12.45---Recap
+
+
+
+Window Handling:
+----------------
+To locate the window -> Selenium WebDriver gives an unique reference
+
+How to get the reference of window?
+------------------------------------
+getWindowHandle() -> to get the refernce of current window ; return String
+getWindowHandles() -> to get all the window references ; return Set<String>
+
+To get single data from Set:
+-----------------------------
+1. Convert the Set into List
+2. Use get(index) in List
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SnapShot:
+
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.11.0</version>
+</dependency>
+
+ Shadowdom: 
+   
+   <!-- https://mvnrepository.com/artifact/io.github.sukgu/automation -->
+<dependency>
+ <groupId>io.github.sukgu</groupId>
+ <artifactId>automation</artifactId>
+ <version>0.1.4.1</version>
+</dependency>
+
+
+
+
+https://peter.sh/experiments/chromium-command-line-switches/
+
+
+   Window Handling:
+----------------
+To locate the window -> Selenium WebDriver gives an unique reference
+
+How to get the reference of window?
+------------------------------------
+getWindowHandle() -> to get the refernce of current window ; return String
+getWindowHandles() -> to get all the window references ; return Set<String>
+
+To get single data from Set:
+-----------------------------
+1. Convert the Set into List
+2. Use get(index) in List
+
+   
+   
+   
+   
+ 
