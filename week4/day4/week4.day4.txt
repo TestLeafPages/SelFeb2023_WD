@@ -1,0 +1,76 @@
+ 
+Agenda for Today:
+=================
+  
+   9.35to 10.25 ---Annotations
+   10.25 to 11.10---Classroom +Break
+   11.10 to 12.15---Attributes
+   12.15 to 12.35---Classroom
+   12.35 to 12.45---Recap
+
+
+
+
+ 
+   Annotations:
+
+@BeforeSuite - start report
+	@BeforeTest - Connecting to database
+		@BeforeClass - TC name, desc, author
+			
+				@BeforeMethod - Launch browser and login---perconditin
+					@Test (mandatory)
+				@AfterMethod - Close browser
+		@AfterClass
+	@AfterTest - Disconnecting database
+@AfterSuite - stop report
+
+
+
+
+
+
+
+
+
+
+
+
+Attributes:
+===========
+1)invocationCount
+         -default value for invocationCount is 1
+         -The number of times a testcase should execute
+         -Use it when:you like to create data for the same information  
+
+
+2)priority:
+     -default value for priority is 0 
+     -To schedule the priorities for the testcases
+     -Lower priorities should run first
+	 
+ 
+
+3)dependsOnMethods
+     -String of Arrays
+     	 
+4)enabled:
+    -Whether the methods are enabled
+    -These testcases will be marked as ignored in the index.html report	
+
+5)alwaysRun	
+	
+6)groups:
+
+
+7)timeOut
+     -The number of milliseconds this testcase should take
+	 -Use it when:you like to benchmark the performance of the test steps
+	 
+8)invocationTimeOut
+    -The maximum number of millisecondsthis test should take for cumulated time of all the 
+invocationCount
+    -This attribute will be ignored if invocationCount is not given
+    -Donot use it	
+	 
+   
