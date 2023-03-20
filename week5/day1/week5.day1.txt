@@ -1,0 +1,102 @@
+Agenda for Today:
+=================
+  
+   09.35 to 10.10---Static Parameterization
+   10.20 to 10.50---Classroom +Break
+   10.50 to 11.25---DataProvider
+   11.25 to 11.50---Classroom
+   11.50 to 12.30---TestNG Assertion
+   
+
+Parameterization:
+    
+    -No hard coding of data inside the classes
+    -Preferred to automate them by passing from an external source (xml)
+
+  2 Types:
+
+   -Static (Paramter)
+      If it is common across multiple testcases->xml(testng)
+
+      Examples: url,username,password
+      
+   -Dynamic  (DataProvider)
+      This is specific to a particular testcases
+
+      CreateLead: companyName,firstName,lastName
+      EditLead:phoneNumber,companyName
+      
+
+Steps to implement Parameter:
+
+  1)Identify the common data that are need to be static (url,username,password)
+  2)Add parameter tag for each one of these data in the XML file
+  3)Map the parameters in the class using @parameters
+    -Note:import from testng.annotations   
+    -Note:The name should exactly match the names in the xml file
+  4)Use that parameters inside the method using arguments
+     -Note:Sequence matters but the name of the argument doesnot matter
+  5)Now,replace the hardcoded data with the arguments   
+
+
+
+
+
+
+
+Steps to implement DataProvider:
+
+1)Identify the data that are need to be dynamic for particular testcase(Cn,fn,Ln)
+2)Create a method to pass data with @DataProvider annotation
+3)Create input array with number of rows and columns
+   -Index starts with 0
+4)return the data to the testcase
+5)@Test(dataProvider)
+6)Pass all the datas as input arguments
+7)Finally,replace all the hardcoded data with the arguments   
+
+
+
+TestNG Assertion:
+===================
+
+** verification and Validation
+
+Assertion in TestNG are way to verify that the expected result and the actual result for matched or not.
+
+
+two types of assert
+1.Hard Assert-if condition failed execution stop
+2.Soft Assert-if condition failed it will execution others script.
+
+what is diff b/w assert and verify?
+
+Assert:
+The assert method is used to verify the expected and actual results of a test case. 
+If the assertion fails, the test case stops immediately, and the control moves to the next 
+test case. It throws an Assertion Error and terminates the execution.
+
+
+Verify:
+The verify method is also used to verify the expected and actual results of a test case.
+ If the verification fails, the test case continues executing, and the result is marked as 
+ a failure at the end of the test run. It does not terminate the execution.
+
+
+
+Hard Assert:
+when any assert statement fails ,it will throw the exception and stop execution.
+
+Soft Assert:
+when any assert got fails means,it will not stop execution.its continue run .
+after completed it will throw the exception.
+
+
+we need create object for softassert
+
+sntax:
+SoftAssert sa= new SoftAssert();
+sa.
+
+we need end with 
+sa.assertAll();
