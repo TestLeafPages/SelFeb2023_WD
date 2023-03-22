@@ -1,0 +1,76 @@
+Agenda for Today:
+=================
+  
+   09.35 to 10.20---Read data form Excel
+   10.25 to 11.05---Classroom +Break
+   11.05 to 11.45---Integration with Create LeadTestCase
+   11.40 to 12.05---Classroom
+   12.10 to 12.30---Common integration
+   
+
+
+   MicroSoft Excel
+   Not a Direct java library
+   We need to use Apache POI 
+   Excel extension
+   .xls-Excel Spreadsheet
+   .xlsx-Excel Spreadsheet in xml format
+
+ * Steps to read from excel
+		 * 
+		 * 1) Open the workbook using file name and path 
+		 * 2) Go to the specific sheet (bysheet name or index) 
+		 * 3) Go to the specific row (by index) 
+		 * 4) Go to the specific column (by index) -- cell
+		 * 5) Read the content
+
+
+.xls-HSSFWorkBook 
+.xlsx-XSSFWorkBook
+
+
+1.I need to Create exclefile and i need save in under project Create new folder and paste file .
+step 1-----XSSFWorkBook
+step2------XSSFWoekSheet
+Step 3-----XSSFRow
+step 4-----XSSFCell
+
+*/
+   ---------------------------------------------------
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>4.1.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>4.1.2</version>
+</dependency>
+
+
+
+
+setTimeout(function(){debugger;},5000);
+
+
+
+Step to Integrate ReadExcle with DataProvider
+==============================================
+
+1.Declare a String[][] variable in ReadExcle program with dimensions a rowcount and Cellcount.
+
+2.Save data into the 2D array by having data[i-1][j]
+
+3   
+
+4.add return statement and chnage void to return type.
+
+
+Common data integration
+
+1.remove DataProvider from Create..paste in BaseClass
+2.Create string variable in excelpgm  pass into file data
+3.need pass variable inside baseclass, pass  variable as gobally
+4. Create @BeforeTest in testcase and pass the value correctly

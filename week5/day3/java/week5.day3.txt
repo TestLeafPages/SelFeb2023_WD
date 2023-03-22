@@ -1,0 +1,62 @@
+Agenda for Today:
+=================
+  
+   09.30-10:10-> Cucumber Introduction
+   10:10-10:25->Featurefile
+   10:25-10.55->Classroom(Featurefile)+Break
+   10:55-11:30-> Step Definition & Runner
+   11:30-12:00->Classroom
+   12.00-12:30->pass multiple data in cucumber
+   
+Cucumber is BDD automation tool
+
+
+
+   TDD - Test Driven Development
+------------------------------
+- Write the testcases first
+- Get the approval for the testcases
+- Development should be based on the testcases
+
+Cons:
+- Lot of negative testcases covered rather than positive testcases
+
+ATTD - Acceptance Test Driven Development:
+------------------------------------------
+- Write the acceptance testcases first
+- Develop the software based on the acceptance testcases
+
+Cons:
+ - Communication gap between the Technical and non technical team
+ 
+ 
+BDD - Behaviour Driven Development:
+-----------------------------------
+- To address the communication gap between tech and non tech team
+
+- Write acceptance testcases first using common language
+	- common language: understandable by both and tech and non tech team
+
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>7.10.1</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>7.10.1</version>
+</dependency>
+
+
+
+   3 Layers:
+----------
+Features            File to write the BDD Testcases (flat file)
+Step Definition     Implement the test step using Java/Selenium
+Runner              TestNG for execution
