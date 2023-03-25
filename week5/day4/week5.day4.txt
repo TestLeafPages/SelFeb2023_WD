@@ -1,0 +1,82 @@
+ Todays Agenda:
+==============
+   09:30-10:30->Hooks Implementation
+   10:30-11:05->Classroom+Break
+   11:05-11:45->Tags
+   11:45-12:00->Classroom
+   12:00-12:30-> Java Keywords
+  
+  
+
+  what is Hooks?
+  Initially is cucumber was develop by Ruby language
+
+cucumber annotation
+
+
+Hooks Implementation:
+=====================
+   @Before - To have the common pre conditions
+   @After - To have the post conditions 
+   
+
+Tags- used to categorize the test scenarois
+
+
+Steps:
+=======
+  1)Write feature file for CreateLead
+  2)Pass multiple data for createLead using Scenario Outline
+  3)Write StepDefintion for CreateLead
+  4)Create BaseClass and put all the pre conditions(Launch,Load url) using @BeforeMethod,AfterMethod
+  5)StepdDefinitions should extend BaseClass
+  6)Runner class should extend BaseClass
+  7)BaseClass should extend AbstractTestNGCucumberTests  
+
+
+Java keywords
+this
+=====
+its current class
+this driver=driver
+//1st driver=local
+//2nd driver=globally
+
+
+super:
+======
+  ->It is a keyword
+  ->It can be achieved only if the parentclass is inherited
+  ->It is used call a method from super class
+
+Classroom:
+===========
+   ->Call seatBelt method from Car class using super keyword in Audi class
+   ->Override handBrake() and try to call that     
+
+
+Constructor:
+============
+   Constructor is the initial way to instantiate an object->It will initialize the state of an object-
+Types:
+======
+   Default Constructor
+   Parameterized Constructor 
+Constructor chaining:
+=====================
+ -this keyword  
+ -It is used to call one constructor from another constructor 
+ -Can we call one constructor from another constructor  
+ -Constructor call should be the first statement of your constructor
+ 
+
+ 
+static:
+=======
+    Object creation is not required.
+	If you update the static data it will override the oldvalue with new value
+  
+variables
+method
+block of code
+  
