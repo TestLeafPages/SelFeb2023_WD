@@ -1,0 +1,43 @@
+Todays Agenda:
+===============
+   09:35-10:20->execute in parallel & static data
+   10:20-11.05->Classroom+break
+   11:05-11:30->Integrate DataProvider with POM
+   11:30-12:00->Classroom
+   12:00-12:30->depend on groups
+
+
+235023
+
+
+        execute in parallel in POM
+        =============================
+        1. to remove static keyword from base class
+        2. you need create own constructor  all the class
+        3.add remotewebdriver inside constructor with variable name as driver
+        4.this.driver=driver
+        5.where you given return new constructor(driver)-need pass the driver inside method
+
+   
+
+
+   but iam getting session id for both window
+   window1-session id(6d7hs87ud9)
+   window2-session diff from 1st id(3gy43uur)
+
+
+   url,use,pwd
+
+
+   Integrate DataProvider with POM
+   ==================================
+   1.create utils package
+   copy and paste excle prg in to it .(POM) 
+   2.create folder in POM and paste xlsx file inside it 
+   3.copy DataProvider and paste in POM baseclass
+   4.remove import stmt and give correct import stmt
+   5.pass variable name as globally
+   6.copy @beforetest and paste in POM-Testcase-TC_002
+   7.remove hardcode values and pass varaiable
+   8. need pass iput args inside @Test -in method(variable)
+
