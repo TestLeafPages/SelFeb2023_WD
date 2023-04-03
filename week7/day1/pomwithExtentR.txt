@@ -1,0 +1,46 @@
+Today's Agenda:
+--------------
+
+Integrating Extent Report with POM
+Selenium challenges
+
+============================
+
+To integrate the ExtentReport with POM
+======================================
+Step:1
+------
+Pre-Condition :
+ 
+ 1.Create a method in base class as startReport
+    Copy and paste first 4 steps of ExtentReport
+	and annonate with @BeforeSuite
+
+@BeforeSuite -->start the report
+
+@BeforeTest-->attaching the testdata(excel sheet)
+@BeforeClass
+@DataProvider-->fetch the data from readexcel file
+@BeforeMethod -->precondition for every @Test Method
+  @Test
+  @Test
+   
+2.Create a method endReport in base class and annotate the method with @AfterSuite
+  flush();
+  
+3.Create a method as testDetails and annotate the method with @BeforeClass
+  add createTest(), assignAuthor(),assignCategory()
+
+4.In @BeforeTest , assign the test deatails  as testname, testdesc , author, category 
+and declare the variables as global in base class
+
+5.Create a method as reportStep to get the status of the each method of the testcase
+and call the method in pages in try catch block to get the status of the method
+
+6.Add Screenshot 
+create  a method as takeSnap with return type int
+ include the snap shot code append with random number 
+
+7.Call the takeSnap method in MediaEntityBuilderClass path
+
+
